@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "products": [
+      {
+        "name": "fede",
+        "timestamp": 1669784026049,
+        "description": "none",
+        "code": "",
+        "photo": "none",
+        "price": 50,
+        "stock": 0,
+        "id": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "products": [
+      {
+        "name": "prueba",
+        "descriptpruebaon": "prueba",
+        "code": "3",
+        "photo": "prueba",
+        "price": "prueba",
+        "stock": "prueba",
+        "id": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "products": [
+      {
+        "name": "prueba",
+        "descriptpruebaon": "prueba",
+        "code": "3",
+        "photo": "prueba",
+        "price": "prueba",
+        "stock": "prueba",
+        "id": "prueba"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "products": [
+      {
+        "name": "5",
+        "descriptpruebaon": "prueba",
+        "code": "5",
+        "photo": "3",
+        "price": "2",
+        "stock": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "products": [
+      {
+        "name": "5",
+        "descriptpruebaon": "prueba",
+        "code": "5",
+        "photo": "3",
+        "price": "2",
+        "stock": "1",
+        "id": 1
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "products": [
+      {
+        "name": "5",
+        "descriptpruebaon": "prueba",
+        "code": "5",
+        "photo": "3",
+        "price": "2",
+        "stock": "1",
+        "id": 1
+      }
+    ]
+  }
+]

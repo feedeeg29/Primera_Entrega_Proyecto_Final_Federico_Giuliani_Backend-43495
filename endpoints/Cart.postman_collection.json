@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "407d5da5-e2c8-4357-8b83-512c8e818b3f",
+		"name": "Cart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23355581"
+	},
+	"item": [
+		{
+			"name": "Create_A_Cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n        \"name\": \"prueba\",\r\n        \"descriptpruebaon\": \"prueba\",\r\n        \"code\": \"3\",\r\n        \"photo\": \"prueba\",\r\n        \"price\": \"prueba\",\r\n        \"stock\": \"prueba\",\r\n        \"id\": \"prueba\"\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/carrito",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_A_Cart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/carrito/c817d27f-1f63-1d72-0d03-93beb5009afb",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"c817d27f-1f63-1d72-0d03-93beb5009afb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Cart_Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/carrito/461/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"461",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Cart_Products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"fede3\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/carrito/10/productos/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"10",
+						"productos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Products_From_A_Cart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/carrito/4/productos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carrito",
+						"4",
+						"productos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
