@@ -3,13 +3,15 @@ const express = require('express');
 const routes = require("../Routes/routes");
 
 const app = express()
+const MongoClient = require('mongodb').Mongo
+
 
 const PORT = process.env.PORT || 8080
 
 //middleware
 app.use(express.static('public'));
 app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use('/', routes)
 app.use((req, res, next) => {
   res.status(404).send(`
@@ -25,5 +27,5 @@ app.use((req, res, next) => {
 const server = app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
 // Server con error
 server.on("error", (err) => {
-  console.log( `El servidor a tenido un error:${err}`)
+  console.log(`El servidor a tenido un error:${err}`)
 })

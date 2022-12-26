@@ -1,7 +1,7 @@
 const express = require("express");
 const { Router } = express;
 const router = Router();
-const Actions = require("../Controllers/controller");
+const Actions = require("../DAOs/DAOsProductos/DAOsFileSystem");
 const admin = true;
 
 // return a product by id

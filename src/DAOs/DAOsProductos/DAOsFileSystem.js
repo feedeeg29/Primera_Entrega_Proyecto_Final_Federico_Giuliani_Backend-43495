@@ -1,31 +1,37 @@
-const products = require("../Products/products");
-const cart = require("../Carts/carts");
+const products = require("../../Products/products");
+const cart = require("../../Carts/carts");
 
-class Actions {
+class Actions extends ContenedorArchivo {
   // Product methods
   static async getAll() {
     const data = await products.getAllProducts()
     return data;
   }
-  static getOne(id) {
-    return products.getProduct(id);
+  static async getOne(id) {
+    const data = await products.getProduct(id);
+
   }
-  static add(product) {
-    return products.addProduct(product);
+  static async add(product) {
+    const data = products.addProduct(product);
+    return data
   }
   static update(id, newContent) {
-    return products.updateProduct(id, newContent);
+    const data = products.updateProduct(id, newContent);
+    return data
   }
   static delete(id) {
-    return products.deleteProduct(id);
+    const data = products.deleteProduct(id);
+    return data
   }
   // Cart methods
   static createCart(prods) {
-    return cart.createCart(prods).id;
+    const data = cart.createCart(prods).id;
+    return data
   }
 
   static deleteCart(id) {
-    return cart.deleteCart(id);
+    const data = cart.deleteCart(id);
+    return data
   }
 
   static async getCartProducts(id) {
